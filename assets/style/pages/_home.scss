@@ -57,7 +57,7 @@
 }
 
 .sec2 {
-	padding: 80px 0;
+	padding: 80px 0 140px;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
@@ -154,6 +154,117 @@
 					color: $elegant-title;
 					font-weight: 500;
 					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+}
+
+.sec3 {
+	padding: 100px 0;
+	width: 65%;
+	min-width: 1100px;
+	margin: 0 auto;
+	display: flex;
+	.schedules {
+		width: 30%;
+		background-color: $black;
+		&__container {
+			margin: 6%;
+			padding: 6%;
+			border: $elegant-title 1px dashed;
+		}
+		&__title {
+			@include flex-center;
+			flex-flow: column nowrap;
+			h3 {
+				text-transform: uppercase;
+				font-size: 1.4rem;
+				color: $white;
+				letter-spacing: 2px;
+			}
+		}
+		&__content {
+			@include flex-center;
+			flex-flow: column nowrap;
+			h2 {
+				margin-bottom: 10px;
+				text-align: center;
+				color: $elegant-title;
+				text-transform: uppercase;
+				font-weight: 500;
+				font-size: 1.3rem;
+			}
+			p {
+				text-align: center;
+				color: $white;
+				line-height: 24px;
+				font-weight: 300;
+				&.last {
+					margin-bottom: 40px;
+				}
+			}
+		}
+	}
+	.reservation {
+		flex: 1;
+		background-color: $white;
+		@include flex-center;
+		flex-flow: column nowrap;
+		&__title {
+			@include flex-center;
+			flex-flow: column nowrap;
+			h3 {
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: 600;
+				font-size: 2.2rem;
+			}
+		}
+		&__form {
+			width: 80%;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: flex-start;
+			align-items: center;
+		}
+		&__inputs {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			column-gap: 5%;
+			.input-area {
+				padding-bottom: 5px;
+				margin-bottom: 30px;
+				border-bottom: $grey1 1px solid;
+				> * {
+					width: 100%;
+					color: $black;
+					font-size: 1rem;
+					padding: 4px;
+				}
+				> select:focus,
+				input:focus {
+					outline: none;
+				}
+			}
+		}
+		&__button {
+			width: 100%;
+			@include flex-center;
+			input {
+				padding: 1.5% 5%;
+				font-family: 'Poppins', sans-serif;
+				background-color: $black;
+				color: $white;
+				font-size: 1.1rem;
+				text-transform: uppercase;
+				font-weight: 500;
+				letter-spacing: 3px;
+				border-radius: 25px;
+				transition: all 250ms;
+				&:hover {
+					transform: scale(1.1);
 				}
 			}
 		}
