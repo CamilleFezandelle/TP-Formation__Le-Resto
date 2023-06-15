@@ -9,10 +9,19 @@ html {
 	scroll-behavior: smooth;
 }
 
-// .elegant-title {
-// 	font-weight: bold;
-// }
+body {
+	background-color: $background1;
+}
 
-// .icon-cutlery {
-// 	background-color: red;
-// }
+.container {
+	max-width: 2000px;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}

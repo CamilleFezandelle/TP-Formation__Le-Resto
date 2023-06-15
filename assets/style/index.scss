@@ -1,12 +1,18 @@
 // utils
+@import './utils/variables';
+@import './utils/mixins';
 
 // base
-
 @import './base/reset';
 @import './base/typography';
 
 // components
+@import './components/elegant-title';
+@import './components/icon-cutlery';
 
 // layout
+@import './layout/header';
+@import './layout/footer';
 
 // pages
+@import './pages/home';

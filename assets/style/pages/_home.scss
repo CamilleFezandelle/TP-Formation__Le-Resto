@@ -1,0 +1,57 @@
+.sec1 {
+	display: flex;
+	flex-flow: row nowrap;
+	.text-presentation,
+	.illustration {
+		width: 50%;
+	}
+	.text-presentation {
+		background-color: $white;
+		&__container {
+			margin: 2%;
+			padding: 2%;
+			border: $elegant-title 1px dashed;
+			@include flex-center;
+			flex-flow: column nowrap;
+			h3 {
+				text-align: center;
+				text-transform: uppercase;
+				font-size: 1.5rem;
+			}
+		}
+		&__description {
+			text-align: center;
+			letter-spacing: 1px;
+			font-weight: 300;
+			font-size: 1.2rem;
+			line-height: 25px;
+			color: $black;
+		}
+		&__cooker {
+			margin: 40px 0 25px;
+			@include flex-center;
+			flex-flow: column nowrap;
+			img {
+				height: 90px;
+				width: 90px;
+				border-radius: 100%;
+			}
+			&--name {
+				margin: 8px 0 5px;
+				color: $black;
+				font-weight: 600;
+				font-size: 1.1rem;
+				letter-spacing: 2px;
+			}
+			&--role {
+				text-transform: uppercase;
+				color: $grey1;
+				font-weight: 500;
+				font-size: 0.9rem;
+			}
+		}
+	}
+	.illustration {
+		background: url(../img/store-01.jpg) center/cover no-repeat;
+	}
+}
