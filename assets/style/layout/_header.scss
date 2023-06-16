@@ -15,6 +15,9 @@ nav {
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
+	@include desk-max-width {
+		width: 95%;
+	}
 	.logo,
 	.social-media {
 		width: 8%;
@@ -81,5 +84,7 @@ nav {
 		font-weight: 300;
 		text-transform: uppercase;
 		letter-spacing: 8px;
+		text-align: center;
+		line-height: 25px;
 	}
 }

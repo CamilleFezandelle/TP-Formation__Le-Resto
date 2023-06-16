@@ -7,8 +7,30 @@
 
 // ------------------ RESPONSIVE ------------------
 
+// Desk-max-width
+@mixin desk-max-width {
+	@media screen and (max-width: $desk-max-width) {
+		@content;
+	}
+}
+
 // Desktop
+@mixin desktop {
+	@media screen and (max-width: $desktop) {
+		@content;
+	}
+}
 
 // Tablet
+@mixin tablet {
+	@media screen and (max-width: $tablet) {
+		@content;
+	}
+}
 
 // Phone
+@mixin mobile {
+	@media screen and (max-width: $mobile) {
+		@content;
+	}
+}
