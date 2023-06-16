@@ -14,23 +14,16 @@
 	}
 }
 
-// Desktop
-@mixin desktop {
-	@media screen and (max-width: $desktop) {
-		@content;
-	}
-}
-
-// Tablet
-@mixin tablet {
+// Mobile
+@mixin mobile {
 	@media screen and (max-width: $tablet) {
 		@content;
 	}
 }
 
-// Phone
-@mixin mobile {
-	@media screen and (max-width: $mobile) {
+// Mobile small
+@mixin mobile-s {
+	@media screen and (max-width: $mobile-s) {
 		@content;
 	}
 }

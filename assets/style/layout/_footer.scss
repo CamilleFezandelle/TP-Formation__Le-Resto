@@ -7,9 +7,15 @@ footer {
 	&-left {
 		flex: 0.5;
 		background-color: $background2;
+		@include mobile {
+			display: none;
+		}
 	}
 	&-right {
 		background-color: $background1;
+		@include mobile {
+			display: none;
+		}
 	}
 	&-container {
 		display: flex;
@@ -19,6 +25,9 @@ footer {
 			width: 100%;
 			min-width: 0;
 		}
+		@include mobile {
+			flex-flow: column nowrap;
+		}
 	}
 	&-container__left,
 	&-container__right {
@@ -27,9 +36,15 @@ footer {
 		@include desk-max-width {
 			padding: 60px 30px;
 		}
+		@include mobile {
+			width: 100%;
+		}
 	}
 	&-container__left {
 		background-color: $background2;
+		@include mobile {
+			display: none;
+		}
 		h2 {
 			text-align: start;
 			margin-bottom: 15px;
@@ -71,6 +86,10 @@ footer {
 				border: $elegant-title 1px solid;
 				border-radius: 5px;
 				color: $white;
+				@include mobile {
+					width: 50%;
+					margin-bottom: 70px;
+				}
 				&:focus {
 					outline: none;
 				}

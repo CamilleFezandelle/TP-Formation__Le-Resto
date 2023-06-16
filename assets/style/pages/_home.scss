@@ -2,9 +2,15 @@
 .sec1 {
 	display: flex;
 	flex-flow: row nowrap;
+	@include mobile {
+		flex-flow: column nowrap;
+	}
 	.text-presentation,
 	.illustration {
 		width: 50%;
+		@include mobile {
+			width: 100%;
+		}
 	}
 	.text-presentation {
 		background-color: $white;
@@ -27,6 +33,9 @@
 			font-size: 1.2rem;
 			line-height: 25px;
 			color: $black;
+			@include mobile-s {
+				font-size: 1rem;
+			}
 		}
 		&__cooker {
 			margin: 40px 0 25px;
@@ -54,6 +63,9 @@
 	}
 	.illustration {
 		background: url(../img/store-01.jpg) center/cover no-repeat;
+		@include mobile {
+			display: none;
+		}
 	}
 }
 
@@ -109,6 +121,9 @@
 			color: $white;
 			font-weight: 300;
 			font-size: 1.2rem;
+			@include mobile {
+				font-size: 0.9rem;
+			}
 		}
 	}
 	&__content {
@@ -119,19 +134,33 @@
 		grid-template-rows: repeat(4, 1fr);
 		padding: 1%;
 		column-gap: 5%;
+		@include mobile {
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(8, 1fr);
+		}
 		&--elem {
 			padding: 6% 3%;
 			display: flex;
 			flex-flow: row nowrap;
 			border-bottom: $grey1 1px dashed;
+			@include mobile {
+				padding: 0 3%;
+			}
 			.illustration {
 				height: 200px;
 				width: 120px;
 				@include flex-center;
+				@include mobile-s {
+					width: 80px;
+				}
 				&--img {
 					height: 110px;
 					width: 110px;
 					border-radius: 100%;
+					@include mobile-s {
+						height: 70px;
+						width: 70px;
+					}
 				}
 			}
 			.text {
@@ -148,6 +177,10 @@
 					font-size: 1.1rem;
 					margin-bottom: 8px;
 					line-height: 28px;
+					@include mobile-s {
+						font-size: 0.9rem;
+						line-height: 20px;
+					}
 				}
 				p {
 					font-family: 'Roboto', sans-serif;
@@ -155,6 +188,8 @@
 					font-weight: 300;
 					font-size: 1.3rem;
 					line-height: 28px;
+					font-size: 1.1rem;
+					line-height: 20px;
 				}
 			}
 			.price {
@@ -163,10 +198,16 @@
 				flex-flow: row nowrap;
 				justify-content: flex-end;
 				align-items: center;
+				@include mobile-s {
+					width: 15%;
+				}
 				p {
 					color: $elegant-title;
 					font-weight: 500;
 					font-size: 1.5rem;
+					@include mobile-s {
+						font-size: 1.2rem;
+					}
 				}
 			}
 		}
@@ -185,9 +226,15 @@
 		min-width: 0;
 		padding: 100px 20px;
 	}
+	@include mobile {
+		flex-flow: column nowrap;
+	}
 	.schedules {
 		width: 30%;
 		background-color: $black;
+		@include mobile {
+			width: 100%;
+		}
 		&__container {
 			margin: 6%;
 			padding: 6%;
@@ -233,6 +280,9 @@
 		background-color: $white;
 		@include flex-center;
 		flex-flow: column nowrap;
+		@include mobile {
+			padding: 50px 0;
+		}
 		&__title {
 			@include flex-center;
 			flex-flow: column nowrap;
@@ -255,6 +305,11 @@
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: repeat(2, 1fr);
 			column-gap: 5%;
+			@include mobile {
+				grid-template-columns: 1fr;
+				grid-template-rows: repeat(6, 1fr);
+				width: 80%;
+			}
 			.input-area {
 				padding-bottom: 5px;
 				margin-bottom: 30px;
@@ -302,6 +357,9 @@
 	@include desk-max-width {
 		padding: 80px 20px 300px;
 	}
+	@include mobile {
+		padding: 80px 20px 125px;
+	}
 	&::after {
 		content: '';
 		position: absolute;
@@ -327,6 +385,9 @@
 	&__title {
 		@include flex-center;
 		flex-flow: column nowrap;
+		@include mobile {
+			display: none;
+		}
 		h3 {
 			color: $white;
 			text-transform: uppercase;
@@ -342,6 +403,9 @@
 			'sma1 big'
 			'sma2 big';
 		gap: 30px;
+		@include mobile {
+			display: none;
+		}
 	}
 	&__event-element:nth-child(1) {
 		grid-area: sma1;
@@ -463,6 +527,9 @@
 		padding: 80px 6%;
 		@include flex-center;
 		flex-flow: column nowrap;
+		@include mobile {
+			margin-top: 0;
+		}
 		&::before {
 			content: '';
 			position: absolute;
@@ -480,6 +547,9 @@
 			font-size: 1.2rem;
 			line-height: 35px;
 			font-weight: 300;
+			@include mobile-s {
+				font-size: 1.1rem;
+			}
 		}
 		p {
 			text-align: center;
@@ -490,10 +560,16 @@
 			color: $black;
 			font-size: 1.8rem;
 			letter-spacing: 1px;
+			@include mobile-s {
+				font-size: 1.5rem;
+			}
 		}
 		.role {
 			color: $elegant-title;
 			font-size: 1.3rem;
+			@include mobile-s {
+				font-size: 1.15rem;
+			}
 		}
 	}
 }

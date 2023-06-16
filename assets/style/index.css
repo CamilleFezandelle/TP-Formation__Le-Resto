@@ -187,6 +187,11 @@ h4 {
   font-size: 3.4rem;
   text-align: center;
 }
+@media screen and (max-width: 992px) {
+  .elegant-title {
+    font-size: 2.4rem;
+  }
+}
 
 .icon-cutlery {
   margin: 40px 0;
@@ -229,6 +234,12 @@ nav {
 @media screen and (max-width: 1100px) {
   nav {
     width: 95%;
+  }
+}
+@media screen and (max-width: 992px) {
+  nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 nav .logo,
@@ -285,6 +296,11 @@ nav ul {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 992px) {
+  nav ul {
+    display: none;
+  }
+}
 nav ul li {
   text-transform: uppercase;
 }
@@ -318,11 +334,26 @@ nav ul li a:hover {
 .head-title .elegant-title {
   font-size: 4rem;
 }
+@media screen and (max-width: 992px) {
+  .head-title .elegant-title {
+    font-size: 3rem;
+  }
+}
 .head-title h1 {
   text-transform: uppercase;
   color: #eee;
   font-size: 4rem;
   letter-spacing: 10px;
+}
+@media screen and (max-width: 992px) {
+  .head-title h1 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .head-title h1 {
+    font-size: 1.9rem;
+  }
 }
 .head-title .subtitle {
   color: #eee;
@@ -349,8 +380,18 @@ footer {
           flex: 0.5;
   background-color: #161513;
 }
+@media screen and (max-width: 992px) {
+  .footer-left {
+    display: none;
+  }
+}
 .footer-right {
   background-color: #21201e;
+}
+@media screen and (max-width: 992px) {
+  .footer-right {
+    display: none;
+  }
 }
 .footer-container {
   display: -webkit-box;
@@ -365,6 +406,14 @@ footer {
     min-width: 0;
   }
 }
+@media screen and (max-width: 992px) {
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+}
 .footer-container__left, .footer-container__right {
   padding: 60px 0;
   width: 50%;
@@ -374,8 +423,18 @@ footer {
     padding: 60px 30px;
   }
 }
+@media screen and (max-width: 992px) {
+  .footer-container__left, .footer-container__right {
+    width: 100%;
+  }
+}
 .footer-container__left {
   background-color: #161513;
+}
+@media screen and (max-width: 992px) {
+  .footer-container__left {
+    display: none;
+  }
 }
 .footer-container__left h2 {
   text-align: start;
@@ -435,6 +494,12 @@ footer {
   border: #a67245 1px solid;
   border-radius: 5px;
   color: #eee;
+}
+@media screen and (max-width: 992px) {
+  .footer-container__right form input {
+    width: 50%;
+    margin-bottom: 70px;
+  }
 }
 .footer-container__right form input:focus {
   outline: none;
@@ -500,9 +565,23 @@ footer {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
 }
+@media screen and (max-width: 992px) {
+  .sec1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+}
 .sec1 .text-presentation,
 .sec1 .illustration {
   width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .sec1 .text-presentation,
+  .sec1 .illustration {
+    width: 100%;
+  }
 }
 .sec1 .text-presentation {
   background-color: #eee;
@@ -537,6 +616,11 @@ footer {
   font-size: 1.2rem;
   line-height: 25px;
   color: #111;
+}
+@media screen and (max-width: 576px) {
+  .sec1 .text-presentation__description {
+    font-size: 1rem;
+  }
 }
 .sec1 .text-presentation__cooker {
   margin: 40px 0 25px;
@@ -574,6 +658,11 @@ footer {
 }
 .sec1 .illustration {
   background: url(../img/store-01.jpg) center/cover no-repeat;
+}
+@media screen and (max-width: 992px) {
+  .sec1 .illustration {
+    display: none;
+  }
 }
 
 .sec2 {
@@ -654,6 +743,11 @@ footer {
   font-weight: 300;
   font-size: 1.2rem;
 }
+@media screen and (max-width: 992px) {
+  .sec2__nav a {
+    font-size: 0.9rem;
+  }
+}
 .sec2__content {
   background-color: #eee;
   border-top: #a67245 5px solid;
@@ -665,6 +759,12 @@ footer {
      -moz-column-gap: 5%;
           column-gap: 5%;
 }
+@media screen and (max-width: 992px) {
+  .sec2__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
+}
 .sec2__content--elem {
   padding: 6% 3%;
   display: -webkit-box;
@@ -675,6 +775,11 @@ footer {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   border-bottom: #b6b6b7 1px dashed;
+}
+@media screen and (max-width: 992px) {
+  .sec2__content--elem {
+    padding: 0 3%;
+  }
 }
 .sec2__content--elem .illustration {
   height: 200px;
@@ -689,10 +794,21 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 576px) {
+  .sec2__content--elem .illustration {
+    width: 80px;
+  }
+}
 .sec2__content--elem .illustration--img {
   height: 110px;
   width: 110px;
   border-radius: 100%;
+}
+@media screen and (max-width: 576px) {
+  .sec2__content--elem .illustration--img {
+    height: 70px;
+    width: 70px;
+  }
 }
 .sec2__content--elem .text {
   -webkit-box-flex: 1;
@@ -719,12 +835,20 @@ footer {
   margin-bottom: 8px;
   line-height: 28px;
 }
+@media screen and (max-width: 576px) {
+  .sec2__content--elem .text h3 {
+    font-size: 0.9rem;
+    line-height: 20px;
+  }
+}
 .sec2__content--elem .text p {
   font-family: "Roboto", sans-serif;
   color: #111;
   font-weight: 300;
   font-size: 1.3rem;
   line-height: 28px;
+  font-size: 1.1rem;
+  line-height: 20px;
 }
 .sec2__content--elem .price {
   width: 22%;
@@ -742,10 +866,20 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 576px) {
+  .sec2__content--elem .price {
+    width: 15%;
+  }
+}
 .sec2__content--elem .price p {
   color: #a67245;
   font-weight: 500;
   font-size: 1.5rem;
+}
+@media screen and (max-width: 576px) {
+  .sec2__content--elem .price p {
+    font-size: 1.2rem;
+  }
 }
 
 .sec3 {
@@ -764,9 +898,22 @@ footer {
     padding: 100px 20px;
   }
 }
+@media screen and (max-width: 992px) {
+  .sec3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+}
 .sec3 .schedules {
   width: 30%;
   background-color: #111;
+}
+@media screen and (max-width: 992px) {
+  .sec3 .schedules {
+    width: 100%;
+  }
 }
 .sec3 .schedules__container {
   margin: 6%;
@@ -850,6 +997,11 @@ footer {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
 }
+@media screen and (max-width: 992px) {
+  .sec3 .reservation {
+    padding: 50px 0;
+  }
+}
 .sec3 .reservation__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -894,6 +1046,13 @@ footer {
   -webkit-column-gap: 5%;
      -moz-column-gap: 5%;
           column-gap: 5%;
+}
+@media screen and (max-width: 992px) {
+  .sec3 .reservation__inputs {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    width: 80%;
+  }
 }
 .sec3 .reservation__inputs .input-area {
   padding-bottom: 5px;
@@ -956,6 +1115,11 @@ footer {
     padding: 80px 20px 300px;
   }
 }
+@media screen and (max-width: 992px) {
+  .sec4 {
+    padding: 80px 20px 125px;
+  }
+}
 .sec4::after {
   content: "";
   position: absolute;
@@ -997,6 +1161,11 @@ footer {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
 }
+@media screen and (max-width: 992px) {
+  .sec4__title {
+    display: none;
+  }
+}
 .sec4__title h3 {
   color: #eee;
   text-transform: uppercase;
@@ -1009,6 +1178,11 @@ footer {
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "sma1 big" "sma2 big";
   gap: 30px;
+}
+@media screen and (max-width: 992px) {
+  .sec4__event-list {
+    display: none;
+  }
 }
 .sec4__event-element:nth-child(1) {
   grid-area: sma1;
@@ -1197,6 +1371,11 @@ footer {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
 }
+@media screen and (max-width: 992px) {
+  .sec4__citation {
+    margin-top: 0;
+  }
+}
 .sec4__citation::before {
   content: "";
   position: absolute;
@@ -1216,6 +1395,11 @@ footer {
   line-height: 35px;
   font-weight: 300;
 }
+@media screen and (max-width: 576px) {
+  .sec4__citation blockquote {
+    font-size: 1.1rem;
+  }
+}
 .sec4__citation p {
   text-align: center;
   font-weight: 300;
@@ -1226,7 +1410,17 @@ footer {
   font-size: 1.8rem;
   letter-spacing: 1px;
 }
+@media screen and (max-width: 576px) {
+  .sec4__citation .name {
+    font-size: 1.5rem;
+  }
+}
 .sec4__citation .role {
   color: #a67245;
   font-size: 1.3rem;
+}
+@media screen and (max-width: 576px) {
+  .sec4__citation .role {
+    font-size: 1.15rem;
+  }
 }/*# sourceMappingURL=index.css.map */
