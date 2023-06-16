@@ -53,13 +53,15 @@ nav {
 				color: $white;
 				font-size: 0.85rem;
 				font-weight: 300;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 	}
 }
 
 .head-title {
-	// background-color: red;
 	height: 70%;
 	width: 70%;
 	margin: 0 auto;
